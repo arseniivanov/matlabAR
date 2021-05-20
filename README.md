@@ -1,5 +1,7 @@
 # matlabAR
 -----Simple augmented reality done in MATLAB-----
+
+
 The simplest version homographyPlacement.m works by selecting 4 points in a photo, creating a homography using SVD that transforms an arbitrary image from it's corner points into the scene.
 
 The more advanced cameraMotionAutomatic.m works by thresholding a contrasting scene, finding a square object and extracting it's corners. pgonCorners sorts these corners in the same way every time, so we can use that information to perform the simple homography operation automatically every frame.
